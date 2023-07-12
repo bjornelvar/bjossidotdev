@@ -1,6 +1,6 @@
 ---
 name: Karan Pratap Singh
-shortname: Karan
+shortname: Björn
 avatar: /static/avatar.jpg
 occupation: Software Engineer
 company: Curebase
