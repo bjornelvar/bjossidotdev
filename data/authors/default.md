@@ -1,14 +1,14 @@
 ---
-name: Karan Pratap Singh
+name: Bjorn Elvar Thorleifsson
 shortname: Björn
 avatar: /static/avatar.jpg
-occupation: Software Engineer
-company: Curebase
+occupation: Backend Developer
+company: Reykjavik University
 resume: /static/Karan_Resume.pdf
 email: contact@karanpratapsingh.com
 twitter: https://twitter.com/karan_6864
-linkedin: https://www.linkedin.com/in/karan99
-github: https://github.com/karanpratapsingh
+linkedin: https://www.linkedin.com/in/bjornelvar
+github: https://github.com/bjornelvar
 ---
 
 A software engineer who values learning and growing with people, teams, and technologies.
