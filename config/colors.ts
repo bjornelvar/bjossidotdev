@@ -8,7 +8,6 @@ export const Colors = {
   // Frontend
   web: '#2D2D2D',
   react: '#61DAF6',
-  nextjs: '#000000',
 
   // Backend
   graphql: '#E535AB',
@@ -63,4 +62,18 @@ export const Colors = {
   resume: '#EEEBFF',
   opensource: '#26BE00',
   tutorial: '#4dd0e1',
+
+  // Bjössi
+  csharp: '#6a1677',
+  java: '#f89917',
+  dotnet: '#5C2D91',
+  restapi: '#012b51',
+  nextjs: '#000000',
+  latex: '#028181',
+  clickhouse: '#F9C646',
+  supabase: '#34b97d',
+  prisma: '#706cff',
+  vercel: '#080808',
+  pandas: '#0b0153',
+  numpy: '#4c77cf',
 };

@@ -1,6 +1,6 @@
 ---
 name: Bjorn Elvar Thorleifsson
-shortname: Björn
+shortname: Bjössi
 avatar: /static/mois.jpg
 occupation: Backend Developer
 company: Reykjavik University

@@ -47,32 +47,21 @@ export default function Project({
     subProjects,
   } = project;
 
-  const [height, width] = dimensions ?? defaultDimensions;
+  // const [height, width] = dimensions ?? defaultDimensions;
 
   const renderScreenShotList = useCallback(
-    (screenshot: string) => {
-      const style: React.CSSProperties = {
-        height,
-        width,
-      };
-
+    (screenshot: string, index: number) => {
       return (
-        <div
-          className='mr-2 flex-shrink-0 overflow-hidden rounded bg-placeholder-light dark:bg-placeholder-dark'
-          style={style}
-        >
-          <Image
-            loading='eager'
+        <div key={screenshot} className='my-2'>
+          <img
             src={screenshot}
-            height={height}
-            width={width}
-            objectFit='cover'
-            alt=''
+            alt={`Screenshot ${index + 1}`}
+            className='screenshot-image'
           />
         </div>
       );
     },
-    [height, width],
+    [],
   );
 
   const renderSubProjectList = useCallback(
@@ -102,7 +91,10 @@ export default function Project({
       <H1 className='lg:text-5x mb-4 text-3xl font-bold dark:text-white'>
         {title}
       </H1>
-      <p className='mb-4 font-light'>{description}</p>
+      {/*<p className='mb-4 font-light'>{description}</p>*/}
+      <p className='mb-4 font-light' style={{ whiteSpace: 'pre-line' }}>
+        {description}
+      </p>
 
       <H2>Stack</H2>
       <StackList stack={stack} />
@@ -112,14 +104,20 @@ export default function Project({
         <DeploymentList deployment={deployment} />
       </Conditional>
 
+      {/*<Conditional condition={hasScreenshots}>*/}
+      {/*  <H2 className='my-4'>Screenshots</H2>*/}
+      {/*  <ScrollContainer*/}
+      {/*    className='list mt-4 mb-1 flex overflow-auto'*/}
+      {/*    hideScrollbars={false}*/}
+      {/*  >*/}
+      {/*    {React.Children.toArray(screenshots.map(renderScreenShotList))}*/}
+      {/*  </ScrollContainer>*/}
+      {/*</Conditional>*/}
       <Conditional condition={hasScreenshots}>
         <H2 className='my-4'>Screenshots</H2>
-        <ScrollContainer
-          className='list mt-4 mb-1 flex overflow-auto'
-          hideScrollbars={false}
-        >
-          {React.Children.toArray(screenshots.map(renderScreenShotList))}
-        </ScrollContainer>
+        <div className='screenshot-list'>
+          {screenshots.map(renderScreenShotList)}
+        </div>
       </Conditional>
 
       <Conditional condition={hasSubProjects}>
