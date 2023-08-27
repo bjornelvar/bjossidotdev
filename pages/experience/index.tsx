@@ -16,16 +16,15 @@ export default function Experience() {
         <Header title='Experience' />
         <div className='container py-12'>
           <div className='-m-4 flex flex-wrap'>
-            <p>What are you doing here?</p>
-            <p>I'll be doing some stuff here soon, in the meantime.</p>
+            <p>What are you doing here? I'll be doing some stuff here soon.</p>
             <p>
-              Just{' '}
+              You could maybe just{' '}
               <a
                 href='/static/bjorn_resume_eng.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
               >
-                download my resume
+                download my beautiful LaTeX resume
               </a>
               .
             </p>
