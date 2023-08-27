@@ -6,11 +6,11 @@ function Card({ title, description, banner, href }): React.ReactElement {
     <div className='p-4 md:w-1/2' style={{ maxWidth: '544px' }}>
       <div className='flex flex-col overflow-hidden rounded-md border-2 border-gray-100 border-opacity-60 dark:border-gray-800'>
         {banner && (
-          <div className='relative w-full flex-shrink-0 overflow-hidden md:h-36 lg:h-48'>
+          <div className='relative flex w-full flex-shrink-0 items-center justify-center overflow-hidden md:h-36 lg:h-48'>
             <Image
               alt={title}
               src={banner}
-              layout='responsive'
+              layout='intrinsic'
               objectFit={'contain'}
               width={544}
               height={306}

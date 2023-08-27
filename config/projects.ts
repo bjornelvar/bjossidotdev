@@ -78,9 +78,29 @@ export const projects: Project[] = [
     ],
     deployment: {
       web: 'https://alfred.app/workflows/bjornelvar/nba-scores/',
-      // android:
-      //   'https://play.google.com/store/apps/details?id=com.celebrify.app',
-      // ios: 'https://apps.apple.com/us/app/celebrify-app/id1469588198',
+    },
+    subProjects: [],
+  },
+  {
+    title: 'Anti Clockwise Rocket Science',
+    slug: 'rocket-science',
+    website:
+      'https://bjornelvar.itch.io/anti-clockwise-rocket-science-2?secret=1ncTbgCp2wtRKMwuPlaZhDNjb4',
+    banner: '/static/projects/Rocket Science/banner.png',
+    description:
+      'I wanted to make this game as zen as possible and I believe I achieved that. I wanted the game to never increase in difficulty, but rather to be a relaxing experience completed by the background music and sound effects.' +
+      '\n\n' +
+      'The game is built with Unity and C#.' +
+      '\n\n' +
+      'Play it by clicking the web button in the Deployments section',
+    repository: null,
+    stack: [Stack.csharp],
+    dimensions: [450, 270],
+    screenshots: [
+      'https://res.cloudinary.com/dmdwodmqv/image/upload/v1693020271/bjossi.dev/rocketscience_desc_vi2zd3.png',
+    ],
+    deployment: {
+      web: 'https://bjornelvar.itch.io/anti-clockwise-rocket-science-2?secret=1ncTbgCp2wtRKMwuPlaZhDNjb4',
     },
     subProjects: [],
   },
@@ -90,18 +110,20 @@ export const projects: Project[] = [
     website: '',
     banner: '/static/projects/Scott Hanson Bot/banner.png',
     description:
-      "One evening, my girlfriend asked me what games were on tonight and I instinctively went to type nba in Alfred. I of course didn't have any workflow for it, so I decided to build one myself. I used the NBA API to get the data and then built a workflow around it using Python. And a lot of JSON parsing.",
+      'I created this Discord bot for my Fantasy Football League. I wanted my Discord server to be more interactive and fun, as well as to archive some things, like what was the score in this particular matchup at this particular point in time. I also wanted to be able to see the current standings, current schedule and the top performers for every position and every week.' +
+      '\n\n' +
+      'The bot is built with Python and is hosted on my Raspberry Pi Zero W.',
     repository: null,
     stack: [Stack.python],
     dimensions: [450, 270],
     screenshots: [
-      // 'https://res.cloudinary.com/dmdwodmqv/image/upload/v1693020270/bjossi.dev/alfred_nba_scores_small_y7cxsj.png',
+      'https://res.cloudinary.com/dmdwodmqv/image/upload/v1693020272/bjossi.dev/scott_standings_bmcuyr.png',
+      'https://res.cloudinary.com/dmdwodmqv/image/upload/v1693020272/bjossi.dev/scott_top_rb_bdqrv7.png',
+      'https://res.cloudinary.com/dmdwodmqv/image/upload/v1693020271/bjossi.dev/scott_scores_zx9p1o.png',
+      'https://res.cloudinary.com/dmdwodmqv/image/upload/v1693020271/bjossi.dev/scott_help_i1cy3q.png',
     ],
     deployment: {
-      // web: 'https://celebrify.in',
-      // android:
-      //   'https://play.google.com/store/apps/details?id=com.celebrify.app',
-      // ios: 'https://apps.apple.com/us/app/celebrify-app/id1469588198',
+      // web: 'https://bjornelvar.itch.io/anti-clockwise-rocket-science-2?secret=1ncTbgCp2wtRKMwuPlaZhDNjb4',
     },
     subProjects: [],
   },
