@@ -24,6 +24,6 @@ github: https://github.com/bjornelvar
 
 ### Some stats:
 
-[![Stat](https://github-readme-stats-bjornelvar.vercel.app/api?username=bjornelvar&card_width=500&include_all_commits=true&count_private=true&show_icons=true&line_height=20&theme=ayu-mirage)](https://github.com/bjornelvar)
+[![Stat](https://github-readme-stats-bjornelvar.vercel.app/api?username=bjornelvar&card_width=500&include_all_commits=true&count_private=true&show_icons=true&line_height=20&theme=apprentice)](https://github.com/bjornelvar)
 
-[![Top-Langs](https://github-readme-stats-bjornelvar.vercel.app/api/top-langs/?username=bjornelvar&card_width=450&layout=compact&hide=HTML,PostScript,jupyter%20notebook&theme=ayu-mirage)](https://github.com/bjornelvar)
+[![Top-Langs](https://github-readme-stats-bjornelvar.vercel.app/api/top-langs/?username=bjornelvar&card_width=450&layout=compact&hide=HTML,PostScript,jupyter%20notebook&theme=apprentice)](https://github.com/bjornelvar)

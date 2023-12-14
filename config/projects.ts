@@ -105,6 +105,26 @@ export const projects: Project[] = [
     subProjects: [],
   },
   {
+    title: 'Canvas Crisis',
+    slug: 'canvas-crisis',
+    website:
+      'https://bjornelvar.itch.io/canvas-crisis?secret=nalHXxorpAvtMxefb4dOVO4unG4',
+    banner: '/static/projects/Canvas Crisis/banner.png',
+    description:
+      'Canvas Crisis is an innovative 2D platformer developed in Unity, offering a unique twist on gameplay through creative painting mechanics. Players have the ability to alter the game environment by painting platforms and tiles, enabling higher jumps, wall climbing, or increased speed. This interactive feature adds a strategic layer to level completion. The game was meticulously designed and programmed within a two-week timeframe. It was a key project for the 3-week course on Computer Game Design and Development at Reykjavik University, under the tutelage of Steingerður Lóa. Our team had the honor of showcasing Canvas Crisis at the UT Messan event in Reykjavik, representing Reykjavik University.',
+    repository: null,
+    stack: [Stack.csharp],
+    dimensions: [450, 270],
+    screenshots: [
+      '/static/projects/Canvas Crisis/canvascrisis.gif',
+      '/static/projects/Canvas Crisis/blueredjump.gif',
+    ],
+    deployment: {
+      web: 'https://bjornelvar.itch.io/canvas-crisis?secret=nalHXxorpAvtMxefb4dOVO4unG4',
+    },
+    subProjects: [],
+  },
+  {
     title: 'Scott Hanson Bot',
     slug: 'scott-hanson-bot',
     website: '',
