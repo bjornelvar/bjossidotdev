@@ -32,3 +32,15 @@
 .collapse .view .title {
   @apply dark:text-white;
 }
+
+.tooltip {
+  background: rgba(0, 0, 0, 0.75);
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  font-size: 14px;
+  pointer-events: none;
+  position: absolute;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.2s;
+}
