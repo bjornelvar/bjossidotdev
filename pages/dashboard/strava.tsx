@@ -1,10 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import PlotFigure from '../../components/PlotFigure';
+import { Toggle, Text } from '@geist-ui/core';
 
 const StravaBoard: React.FC = () => {
   const [unit, setUnit] = useState('km');
   const [activities, setActivities] = useState([]);
   const [error, setError] = useState(''); // Added error state
+
+  const handleToggleChange = () => {
+    setUnit(unit === 'km' ? 'miles' : 'km');
+  };
 
   useEffect(() => {
     const fetchActivities = async () => {
@@ -65,15 +70,18 @@ const StravaBoard: React.FC = () => {
 
   return (
     <div>
-      <h1>
-        Please do not refresh a lot, I only get 50 requests per 15 minutes!!!!
-      </h1>
-      <h4>
-        Will probably be smarter about this in the future and cache the data :)
-      </h4>
-      <button onClick={() => setUnit(unit === 'km' ? 'miles' : 'km')}>
-        Switch to {unit === 'km' ? 'Miles' : 'Kilometers'}
-      </button>
+      <div>
+        <Text font={0.8}>
+          Switch to {unit === 'km' ? 'miles' : 'kilometers'}
+        </Text>
+        <Toggle
+          marginBottom={0.5}
+          checked={unit === 'miles'}
+          onChange={handleToggleChange}
+          width={1.5}
+          height={1.5}
+        />
+      </div>
       <PlotFigure data={activities} unit={unit} />
     </div>
   );
