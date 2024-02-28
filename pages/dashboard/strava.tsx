@@ -56,7 +56,6 @@ const StravaBoard: React.FC = () => {
     };
 
     fetchActivities();
-    console.log(activities);
   }, []);
 
   // Handle error in UI, for example
@@ -69,6 +68,9 @@ const StravaBoard: React.FC = () => {
       <h1>
         Please do not refresh a lot, I only get 50 requests per 15 minutes!!!!
       </h1>
+      <h4>
+        Will probably be smarter about this in the future and cache the data :)
+      </h4>
       <button onClick={() => setUnit(unit === 'km' ? 'miles' : 'km')}>
         Switch to {unit === 'km' ? 'Miles' : 'Kilometers'}
       </button>
