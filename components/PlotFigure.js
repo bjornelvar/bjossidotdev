@@ -18,7 +18,7 @@ const PlotFigure = ({ data, unit }) => {
     }, {});
 
     const marks = Object.keys(transformedData).flatMap(userId => {
-      const strokeColor = userId === 'bjossi' ? '#283618' : '#bc6c25';
+      const strokeColor = userId === 'bjossi' ? 'blue' : '#bc6c25';
 
       // Existing line and crosshair marks
       const lineMark = Plot.line(transformedData[userId], {
