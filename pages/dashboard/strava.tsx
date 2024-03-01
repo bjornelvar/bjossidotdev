@@ -11,6 +11,17 @@ const StravaBoard: React.FC = () => {
     setUnit(unit === 'km' ? 'miles' : 'km');
   };
 
+  const formatDistance = (distance, unit) => {
+    return unit === 'km'
+      ? distance.toFixed(2)
+      : (distance * 0.621371).toFixed(2);
+  };
+
+  const formatDuration = seconds => {
+    const minutes = Math.floor(seconds / 60);
+    return `${minutes} minutes`;
+  };
+
   useEffect(() => {
     const fetchActivities = async () => {
       try {
@@ -23,10 +34,12 @@ const StravaBoard: React.FC = () => {
               );
             }
             return res.json().then(activities =>
-              activities.map(activity => ({
-                ...activity,
-                userId, // Add userId to each activity
-              })),
+              activities
+                .filter(activity => activity.type === 'Run') // Filter only runs
+                .map(activity => ({
+                  ...activity,
+                  userId, // Add userId to each activity
+                })),
             );
           }),
         );
