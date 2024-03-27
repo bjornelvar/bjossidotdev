@@ -129,7 +129,7 @@ export default function Day() {
           </div>
         ))
       ) : (
-        <Text>Wikipedia API was too slow. Try going back and forth!</Text>
+        <Text>Wikipedia API is being slow.</Text>
       )}
     </div>
   );
