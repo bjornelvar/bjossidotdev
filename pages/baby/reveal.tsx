@@ -29,7 +29,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
       setTimeLeft(calculateTimeLeft());
     }, 1000);
     return () => clearInterval(timer);
-  }, [targetDate]); // targetDate or empty array both work fine if targetDate doesn't change
+  }, [targetDate]);
 
   const { days, hours, minutes, seconds } = timeLeft;
   const isTimeUp =
@@ -37,7 +37,7 @@ const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   return (
     <div className='mb-8 text-center'>
-      <h2 className='mb-4 text-2xl font-semibold'>Countdown to Reveal</h2>
+      <h2 className='text-l mb-4 font-semibold'>🧒🏼 or 👧🏼</h2>
       {!isTimeUp ? (
         <div className='flex justify-center space-x-4'>
           <div className='flex flex-col items-center rounded bg-gray-100 px-4 py-2 dark:bg-gray-800'>
@@ -94,17 +94,19 @@ const Reveal: React.FC = () => {
 
   return (
     <div className='flex min-h-screen w-full flex-col items-center justify-center px-4'>
+      <h1 className='mb-6 text-2xl font-bold'>Hello, World!</h1>
+      <Countdown targetDate={revealDate} />
       <div className='mb-8 w-full max-w-xl'>
-        <h1 className='mb-6 text-4xl font-bold'>Hello, World!</h1>
-        <Countdown targetDate={revealDate} />
         <Slider {...sliderSettings}>
           {images.map((src, index) => (
             <div key={index}>
-              <img
-                src={src}
-                alt={`Slide ${index + 1}`}
-                className='mx-auto rounded shadow-lg'
-              />
+              <div className='flex h-96 w-full items-center justify-center overflow-hidden'>
+                <img
+                  src={src}
+                  alt={`Slide ${index + 1}`}
+                  className='h-full w-auto object-cover object-center'
+                />
+              </div>
             </div>
           ))}
         </Slider>
