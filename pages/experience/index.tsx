@@ -20,7 +20,7 @@ export default function Experience() {
             <p>
               You could maybe just{' '}
               <a
-                href='/static/bjorn_resume_eng.pdf'
+                href='/static/bjorn_thorleifsson_cv_2024.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
               >

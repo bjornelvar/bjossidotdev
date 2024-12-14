@@ -76,4 +76,5 @@ export const Colors = {
   vercel: '#080808',
   pandas: '#0b0153',
   numpy: '#4c77cf',
+  rust: '#f74c01',
 };

@@ -48,30 +48,22 @@ export enum Stack {
   vercel,
   pandas,
   numpy,
+  rust,
 }
 
 export const WorkStack = [
-  Stack.typescript,
   Stack.python,
-  Stack.react,
-  Stack.postgres,
-  Stack.reactnative,
-  Stack.django,
-  Stack.node,
-  Stack.javascript,
-  Stack.mongo,
+  Stack.rust,
   Stack.csharp,
-  Stack.java,
   Stack.dotnet,
+  Stack.javascript,
+  Stack.typescript,
+  Stack.postgres,
   Stack.restapi,
   Stack.nextjs,
   Stack.latex,
-  Stack.clickhouse,
-  Stack.supabase,
-  Stack.prisma,
   Stack.vercel,
   Stack.pandas,
-  Stack.numpy,
 ];
 
 type StackInfoMap = {
@@ -207,5 +199,10 @@ export const StackInfo: Record<Stack, StackInfoMap> = {
   [Stack.numpy]: {
     value: 'NumPy',
     color: Colors.numpy,
+  },
+
+  [Stack.rust]: {
+    value: 'Rust',
+    color: Colors.rust,
   },
 };
