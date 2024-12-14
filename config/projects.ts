@@ -33,26 +33,36 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: 'Sleeper Live Table',
+    slug: 'sleeper-live-table',
+    website: 'https://sleeper-live-league-table.vercel.app/',
+    banner: '/static/projects/Sleeper Live Table/banner.png',
+    description:
+      'A live league table for your Sleeper Fantasy Football league using the Sleeper API.',
+    repository: null,
+    stack: [Stack.nextjs, Stack.javascript, Stack.vercel],
+    dimensions: [450, 270],
+    screenshots: [],
+    deployment: {
+      web: 'https://sleeper-live-league-table.vercel.app/',
+    },
+    subProjects: [],
+  },
+  {
     title: 'NFL Tippkeppnin',
     slug: 'nfl-tippkeppnin',
     website: 'https://tippkeppni.net',
     banner: '/static/projects/NFL Tippkeppnin/banner.png',
     description:
-      "A Pick 'Em style game for the NFL season. Users pick the winners of each game. " +
-      'The app is built with Next.js, Prisma and Supabase. The app is deployed on Vercel. ' +
-      '\n\n' +
-      'Users can sign in with Auth0 and their picks are saved to the database. ' +
-      "When Preseason power rankings have been submitted, the user's picks are automatically generated for the entire season. ",
+      "A Pick 'Em style game for the NFL season. Users pick the winners of each game. The app is built with Next.js, Prisma and Supabase. The app is deployed on Vercel. Users can sign in with Auth0 and their picks are saved to the database. When Preseason power rankings have been submitted, the user's picks are automatically generated for the entire season. ",
     repository: null,
     stack: [
       Stack.nextjs,
       Stack.postgres,
-      Stack.node,
-      Stack.prisma,
       Stack.typescript,
       Stack.javascript,
-      Stack.supabase,
       Stack.vercel,
+      Stack.dotnet,
     ],
     dimensions: [450, 270],
     screenshots: [],
