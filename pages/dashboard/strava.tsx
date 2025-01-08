@@ -95,7 +95,7 @@ const StravaBoard: React.FC = () => {
           height={1.5}
         />
       </div>
-      <PlotFigure data={activities} unit={unit} />
+      <PlotFigure data={activities} />
     </div>
   );
 };
