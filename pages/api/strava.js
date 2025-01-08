@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     const { access_token } = await refreshResponse.json();
 
     // Fetch activities with the new access token
-    const after = Math.floor(new Date('2024-01-01T00:00:01Z').getTime() / 1000);
+    const after = Math.floor(new Date('2025-01-01T00:00:01Z').getTime() / 1000);
     const activitiesUrl = `https://www.strava.com/api/v3/athlete/activities?after=${after}&per_page=200&page=1`;
 
     const activitiesResponse = await fetch(activitiesUrl, {
@@ -41,6 +41,7 @@ export default async function handler(req, res) {
     }
 
     const activities = await activitiesResponse.json();
+    console.log('activities: ', activities);
     res.status(200).json(activities);
   } catch (error) {
     console.error(error);
